@@ -28,6 +28,7 @@ img {
 /*end css reset*/
 .container {
 	max-width: 1170px;
+	width: 100%;
 	margin: 0 auto;
 	padding: 0 40px;
 	box-sizing: border-box;
@@ -63,7 +64,10 @@ img {
 	display: flex;
     align-items: center;
 }
-.container_logo ul li {
+.logo {
+	display: flex;
+}
+.logo ul li {
 	margin-left: 40px;
 }
 .btn_header {
@@ -185,3 +189,64 @@ img {
 	text-align: center;
 }
 /*loogos*/
+
+@media screen and (max-width: 768px) {
+	.nav_top {
+		font-size: 20px;
+		line-height: 3;
+	}
+	.header_bottom li {
+		font-size: 20px;
+		margin-left: 15px;
+	}	
+}
+@media screen and (max-width: 576px) {
+	.container {
+		padding: 0;
+	}
+	.logotype {
+		display: none;
+	}
+	.nav_top {
+		font-size: 10px;
+	}
+	.nav_top ul li {
+		margin: 0;
+	}
+	.nav_top ul {
+		display: flex;
+		flex-direction: column;
+		padding-left: 5px;
+	}
+	.header_bottom li {
+		font-size: 15px;
+	}
+	.container_logo ul li {
+		margin-left: 5px;
+		padding-bottom: 15px;
+	}
+	.logo ul {
+		display: flex;
+		flex-direction: column;
+	}
+	.login {
+		margin-left: 30px;
+	}
+	.container_contant {
+		font-size: 40px;
+		padding: 100px;
+	}
+	.contant_text {
+		font-size: 15px;
+		padding: 15px;
+	}
+	.container_contant_back {
+		padding: 10px;
+	}
+	.container_contant_back h2 {
+		font-size: 30px;
+	}
+	.container_contant_back h4, .btn_view_open {
+		font-size: 16px;
+	}
+}
